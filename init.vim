@@ -1,3 +1,4 @@
+" For NeoVim with vim-plug
 call plug#begin(stdpath('data') . '/plugged')
 
 Plug 'https://github.com/joshdick/onedark.vim.git'
