@@ -6,6 +6,6 @@ sudo apt install neovim
 sh -c 'curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
 	       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 mkdir -p ~/.config/nvim/
-ln -s "$SCRIPTPATH/init.vim" ~/.config/nvim/
-ln -s "$SCRIPTPATH/starship.toml" ~/.config/
+ln -s -f "$SCRIPTPATH/init.vim" ~/.config/nvim/
+ln -s -f "$SCRIPTPATH/starship.toml" ~/.config/
 nvim -c ':PlugInstall' -c ":qa!"
